@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.navBar {
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+
+.logo {
+  height: 20%;
+}
+
+.navList {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.navBar .navList {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.navBar a {
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.navBar a:hover {
+  background-color: black;
+}
+
+.menu {
+  display: none;
+}
+
+.menuLine {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+.banner{
+  background-color: black;
+  color: red;
+  text-align: center;
+  height: 204.8px;
+  padding-top: 5rem;
+}
+
+.productText{
+  text-align: center;
+  font-size: 30px;
+  background-color: red;
+  color: black;
+  padding-top: 1rem;
+
+}
+.merchText{
+  text-align: center;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+}
+
+
+.products{
+  background-color: red;
+
+}
+.merchandise{
+  background-color: black;
+}
+.products , .merchandise {
+  margin: 0px auto ;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.box {
+  margin: 40px auto 0 auto;
+  color: white;
+  background-color:lightgray;
+  width: 140px;
+  margin: 20px;
+  text-align: center;
+  line-height: 140px;
+  font-size: 20px;
+}
+
+.text{
+  text-align:center;
+  color: white;
+}
+
+
+
+
+
+@media all and (max-width:1000px) {
+  .navBar .navList{
+    display: block;
+  }
+
+  
+}
+
+@media all and (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  
+ .navBar .navList{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+  }
+
+ .active{
+  display: block;
+ }
+ .products , .merchandise{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+}
